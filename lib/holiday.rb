@@ -60,15 +60,14 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holidays_and_supplies|
     puts "#{season.capitalize}:"
-    binding.pry
       holiday.values.each do |holiday, supplies|
         puts "#{holiday.to_s.split(", ").collect do |word|
-        holiday << word.capitalize!
-      end #do supplies
+          holiday << word.capitalize!
+        end #do word
       puts "#{holiday.join(" ")}: #{supplies.join(", ")}"
-end
-
-end #do
+      end #holiday values
+  end #holiday hash
+end #method
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
