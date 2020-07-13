@@ -73,4 +73,4 @@ def all_holidays_with_bbq(holiday_hash)
       data.collect {|holiday, supplies| puts "#{holiday.to_sym}" if supplies.detect{|i| i == "BBQ"}}
     end #do
 end
-all_holidays_with_bbq(holiday_hash)
+#all_holidays_with_bbq(holiday_hash)
