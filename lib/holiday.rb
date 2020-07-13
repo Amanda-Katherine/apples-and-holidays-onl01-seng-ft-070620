@@ -71,11 +71,11 @@ def all_holidays_with_bbq(holiday_supplies)
   # include the string "BBQ"
     bbq_holidays = []
     holidays_supplies.each do |seasons, data|
-      data.each {|holiday, supplies| 
+      data.each {|holiday, supplies|
         supplies.each do |i|
           if supplies.detect{|i| i == "BBQ"}}
           bbq_holidays << holiday
-        end #do sup.each  
+        end #do sup.each
     end #do hol_sup
     return bbq_holidays
 end
